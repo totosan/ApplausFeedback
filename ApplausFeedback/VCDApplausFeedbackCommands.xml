@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="de-DE" Name="VoiceCommandsSet_de-de">
+    <CommandPrefix>Test</CommandPrefix>
+    <Example>Wie ist Stimmung?</Example>
+    <Command Name="howIsMood">
+      <Example>Wie ist die Stimmung?</Example>
+      <ListenFor>Wie ist die {mood}</ListenFor>
+      <Feedback>Hhmmmm, lass mal schauen...</Feedback>
+      <VoiceCommandService Target="VoiceService"/>
+    </Command>
+    <PhraseList Label="mood">
+      <Item>Stimmung</Item>
+    </PhraseList>
+  </CommandSet>
+</VoiceCommands>
